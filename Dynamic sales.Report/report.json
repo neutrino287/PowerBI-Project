@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "619df489a0c120570aa6",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2204b65a8048a6084584\",\"layouts\":[{\"id\":0,\"position\":{\"x\":40.851063829787236,\"y\":76.83890577507599,\"z\":1000,\"width\":197.4468085106383,\"height\":226.6261398176292,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Table.Client\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Client\"},\"Name\":\"Table.Client\",\"NativeReferenceName\":\"Client\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 226.63,
+          "width": 197.45,
+          "x": 40.85,
+          "y": 76.84,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6a17210ec5e508ac739c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":296.65653495440733,\"y\":398.7841945288754,\"z\":2000,\"width\":441.580547112462,\"height\":320.9726443768997,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table (2).SalesClassItem\",\"active\":true}],\"Y\":[{\"queryRef\":\"Table (2).Measure 2\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"summary\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Sales Class\"},\"Name\":\"Table (2).SalesClassItem\",\"NativeReferenceName\":\"Sales Class\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"# Sales\"},\"Name\":\"Table (2).Measure 2\",\"NativeReferenceName\":\"# Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"# Sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 320.97,
+          "width": 441.58,
+          "x": 296.66,
+          "y": 398.78,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"fdf41e3b553980c33846\",\"layouts\":[{\"id\":0,\"position\":{\"x\":306.3829787234043,\"y\":22.37082066869301,\"z\":0,\"width\":726.565349544073,\"height\":350.1519756838906,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sample Dataset.SalesID\"},{\"queryRef\":\"Sum(Sample Dataset.SalesAmount)\"},{\"queryRef\":\"Sample Dataset.ProductCategory\"},{\"queryRef\":\"Sample Dataset.ThresholdMin\"},{\"queryRef\":\"Sample Dataset.ThresholdMax\"},{\"queryRef\":\"Sample Dataset.Client\"},{\"queryRef\":\"Sample Dataset.Measure\"},{\"queryRef\":\"Sample Dataset.SalesClass\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sample Dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesID\"},\"Name\":\"Sample Dataset.SalesID\",\"NativeReferenceName\":\"SalesID\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(Sample Dataset.SalesAmount)\",\"NativeReferenceName\":\"Sum of SalesAmount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ProductCategory\"},\"Name\":\"Sample Dataset.ProductCategory\",\"NativeReferenceName\":\"ProductCategory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ThresholdMax\"},\"Name\":\"Sample Dataset.ThresholdMax\",\"NativeReferenceName\":\"ThresholdMax\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ThresholdMin\"},\"Name\":\"Sample Dataset.ThresholdMin\",\"NativeReferenceName\":\"ThresholdMin\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Client\"},\"Name\":\"Sample Dataset.Client\",\"NativeReferenceName\":\"Client\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ClientFilter\"},\"Name\":\"Sample Dataset.Measure\",\"NativeReferenceName\":\"ClientFilter\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesClass\"},\"Name\":\"Sample Dataset.SalesClass\",\"NativeReferenceName\":\"SalesClass\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 350.15,
+          "width": 726.57,
+          "x": 306.38,
+          "y": 22.37,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
